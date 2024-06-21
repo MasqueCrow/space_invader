@@ -10,68 +10,32 @@ to create different objects in this project
 4. Music and sound effects
 5. Score tabulation
 
+## Getting Started
+1. Download project folder
+2. Run command `node server.js` in project folder
+3. Access localhost in browser to play the game
 
-## Collision Detection Algorithm and Object Oriented design
+
+## Keys
+- Player One: Move Left: A, Move Right: D, Shoot: S
+- Player Two: Move Left: L, Move Right: ', Shoot: ;
+- Mode: Normal (N), Hard (H)
+- Player: 1P (Player 1), 2P (Player 2)
+
+## Object Oriented Design
+Objects with similar properties and behaviors are initially defined as classes, serving as blueprints to create various instances. This approach promotes code reusability, allowing us to create multiple objects based on the class template and customize their behavior and properties as needed. Examples of this can be found in classes like Alien, Brick, and Laser.
+
+## Collision Detection Algorithm 
+The Collision Detection Algorithm relies on a simple math formula using the Euclidean distance (also known as the straight-line distance or L2 norm) to measure the shortest distance between any two points. By utilizing the x and y coordinates of these points, we can easily calculate the distance using the JavaScript dist() function.
+
+To determine whether the laser has collided with an entity (such as a ship or aliens), we compare the sum of the laser’s radius and the entity’s radius to the calculated distance between them. If the sum of the radii is greater than or equal to the distance, it indicates a collision, as their areas have overlapped.
+
 
 ## Demo
 
-<img src="./normal-mode.gif" alt="My Project GIF" width="500" height="600">
+### 1P Normal Mode
+<img src="./normal-mode.gif" alt="Normal">
 
-## Keys
-1. Player One
-2. Player Two
- 
-## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+### 2P Hard Mode
+<img src="./hard-mode.gif" alt="Hard">
