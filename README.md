@@ -1,6 +1,6 @@
 # Space Invader Game
-Build my own simple space invader game to improve my programming skill while exploring the usage of object-oriented programming design
-to create different objects in this project
+Created my own space invader game to enhance my programming skill while exploring the usage of object-oriented programming design
+to create different objects in this project. 🚀🚀
 
 ## Features
 
