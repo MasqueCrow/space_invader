@@ -33,9 +33,9 @@ To determine whether the laser has collided with an entity (such as a ship or al
 
 ## Demo
 
-### 1P Normal Mode
+### Normal Mode
 <img src="./normal-mode.gif" alt="Normal">
 
 
-### 2P Hard Mode
+### Hard Mode
 <img src="./hard-mode.gif" alt="Hard">
